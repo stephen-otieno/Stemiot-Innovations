@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #493c3e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e43c5c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #ffffff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -172,6 +172,11 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+  --background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Global Header on Scroll
@@ -768,7 +773,7 @@ section,
 
 .hero:before {
   content: "";
-  /*background: color-mix(in srgb, var(--background-color), transparent 30%);*/
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -788,7 +793,7 @@ section,
 .hero p {
   margin: 10px 0 0 0;
   font-size: 24px;
-  color: var(--heading-color);
+  color: var(--accent-color);
 }
 
 .hero .btn-get-started {
