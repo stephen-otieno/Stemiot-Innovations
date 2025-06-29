@@ -38,25 +38,31 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        
-         <img src="{% static 'assets/img/logo1.png' %}" alt="">
-        <h1 class="sitename">STEMIOT SOFTWARES</h1>
+
+          <div>
+              <img src="{% static 'assets/img/logo1.png' %}" alt="">
+                <h1 class="sitename">STEMIOT SOFTWARES  </h1>
+
+          </div>
+
+          <h5>Smart Solutions, Real Impact</h5>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+            <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Application Development</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Database Creation and Management</a></li>
+                  <li><a href="#">Graphic Design</a></li>
+                  <li><a href="#">Cybercafé Services</a></li>
+                </ul>
+            </li>
+            <li><a href="#team">Team</a></li>
+
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -75,7 +81,7 @@
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <h2>Welcome to Stemiot Innovations</h2>
+            <h2>Welcome to Stemiot Softwares</h2>
             <p>We specialize in delivering cutting-edge technology solutions tailored to meet your business needs.
                 From system development, website design, and application development to cybercafe services and beyond,
                 we provide innovative, reliable, and scalable tech solutions.</p>
@@ -92,17 +98,25 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p><span>Learn More</span> <span class="description-title">About Us<br></span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
+          <p style="font-size: 24px;">Stemiot Softwares is a forward-thinking tech company driven by a passion for innovation, problem-solving, and digital transformation.
+              We specialize in building intelligent, user-centered software and web solutions that address real-world challenges across industries.
+              From intuitive mobile and web applications to secure database systems and automation tools, our mission is to empower businesses, institutions, and communities through technology.
+              At Stemiot, we believe that great software should not only function — it should inspire, simplify, and create lasting impact.</p>
+
+          <br><br>
+
         <div class="row gy-5">
 
           <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            <h3>Stemiot Softwares Project Showcase</h3>
+            <p style="font-size: 24px">
+
+                Our diverse portfolio showcases the creativity, collaboration, and technical expertise that drive our mission forward.
+                Here are some of the innovative projects we’ve delivered so far.
             </p>
             <a href="#" class="about-btn align-self-center align-self-xl-start"><span>About us</span> <i class="bi bi-chevron-right"></i></a>
           </div>
@@ -111,27 +125,36 @@
             <div class="row gy-4">
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-briefcase"></i>
-                <h4><a href="" class="stretched-link">Corporis voluptates sit</a></h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <img src="{% static 'assets/img/projects-logo/gender_equity.png' %}" alt="" width="20%">
+                <h4><a href="" class="stretched-link">GenderEquity</a></h4>
+                <p>A platform to raise awareness and fight against gender-based violence by providing reporting tools,
+                    educational content, and support services.
+ </p>
               </div><!-- Icon-Box -->
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-gem"></i>
-                <h4><a href="" class="stretched-link">Ullamco laboris nisi</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <img src="{% static 'assets/img/projects-logo/swiftcare.jpg' %}" alt="" width="25%">
+                <h4><a href="https://swiftcaremedical.onrender.com" class="stretched-link">Swiftcare</a></h4>
+                <p>A hospital management system aiming to streamline operations, including patient registration,
+                    appointment scheduling, and medical record management, enhancing service delivery in healthcare settings.</p>
               </div><!-- Icon-Box -->
 
-              <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-broadcast"></i>
-                <h4><a href="" class="stretched-link">Labore consequatur</a></h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-              </div><!-- Icon-Box -->
+
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-easel"></i>
-                <h4><a href="" class="stretched-link">Beatae veritatis</a></h4>
-                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                <i class="bi bi-shield-lock"></i>
+                <h4><a href="" class="stretched-link">TransJustice</a></h4>
+                <p>TransJustice is a digital platform designed to enhance transparency and access to justice
+                    for victims within police stations. It aims to digitize the Occurrence Book (OB), enabling efficient
+                    reporting, case tracking, and accountability.
+</p>
+              </div><!-- Icon-Box -->
+
+                <div class="col-md-6 icon-box position-relative">
+                  <img src="{% static 'assets/img/projects-logo/filoarts.png' %}" alt="" width="15%">
+                <h4><a href="https://filoartsplus.onrender.com" class="stretched-link">FiloArts</a></h4>
+                <p>An innovative platform for visual artists to display and sell their artwork online, connecting
+                    creatives with potential buyers and art enthusiasts.</p>
               </div><!-- Icon-Box -->
 
             </div>
@@ -143,13 +166,13 @@
 
     </section><!-- /About Section -->
 
+
     <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Check Our <span class="description-title">Services</span></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -158,33 +181,39 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bi bi-laptop"></i></div>
+              <h4><a href="" class="stretched-link">Application Development</a></h4>
+              <p>Stemiot Softwares specializes in developing robust and scalable applications tailored for both desktop and mobile platforms.
+                  We focus on functionality, user experience, and performance to deliver solutions that meet specific business or personal needs.
+</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="bi bi-code-slash"></i></div>
+              <h4><a href="" class="stretched-link">Web Development</a></h4>
+              <p>Our web development services cover the design and creation of interactive, responsive, and visually appealing websites.
+                  We build dynamic web solutions using modern technologies to ensure seamless access across devices and browsers.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bi-database"></i></div>
+              <h4><a href="" class="stretched-link">Database Management</a></h4>
+              <p>Stemiot Softwares offers comprehensive database services, including the design, creation, and maintenance of secure and efficient databases.
+                  We ensure structured data storage, optimized performance, and reliable backup systems to support your application's functionality and business intelligence needs.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <div class="icon"><i class="bi bi-printer"></i></div>
+              <h4><a href="" class="stretched-link">Cybercafé Services</a></h4>
+              <p>Stemiot Softwares also offers essential cybercafé services including printing, photocopying, scanning, document editing,
+                  online form assistance, branding, and general IT support.
+                  We aim to provide fast, affordable, and reliable digital services to support both individual and business needs.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -195,97 +224,97 @@
     </section><!-- /Services Section -->
 
 
-
-    <!-- Team 2 Section -->
-    <section id="team" class="team-1 section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Our Hardworking <span class="description-title">Team</span></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="{% static 'assets/img/team/CEO.jpg' %}" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Stephen Otieno</h4>
-                  <span>Chief Executive Officer</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Team 2 Section -->
+{##}
+{#    <!-- Team 2 Section -->#}
+{#    <section id="team" class="team-1 section">#}
+{##}
+{#      <!-- Section Title -->#}
+{#      <div class="container section-title" data-aos="fade-up">#}
+{#        <h2>Team</h2>#}
+{#        <p>Our Hardworking <span class="description-title">Team</span></p>#}
+{#      </div><!-- End Section Title -->#}
+{##}
+{#      <div class="container">#}
+{##}
+{#        <div class="row gy-4">#}
+{##}
+{#          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">#}
+{#            <div class="member">#}
+{#              <img src="{% static 'assets/img/team/CEO.jpg' %}" class="img-fluid" alt="">#}
+{#              <div class="member-info">#}
+{#                <div class="member-info-content">#}
+{#                  <h4>Stephen Otieno</h4>#}
+{#                  <span>Chief Executive Officer</span>#}
+{#                  <div class="social">#}
+{#                    <a href=""><i class="bi bi-twitter-x"></i></a>#}
+{#                    <a href=""><i class="bi bi-facebook"></i></a>#}
+{#                    <a href=""><i class="bi bi-instagram"></i></a>#}
+{#                    <a href=""><i class="bi bi-linkedin"></i></a>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div><!-- End Team Member -->#}
+{##}
+{#          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">#}
+{#            <div class="member">#}
+{#              <img src="{% static 'assets/img/team/team-2.jpg' %}" class="img-fluid" alt="">#}
+{#              <div class="member-info">#}
+{#                <div class="member-info-content">#}
+{#                  <h4>Sarah Jhonson</h4>#}
+{#                  <span>Product Manager</span>#}
+{#                  <div class="social">#}
+{#                    <a href=""><i class="bi bi-twitter-x"></i></a>#}
+{#                    <a href=""><i class="bi bi-facebook"></i></a>#}
+{#                    <a href=""><i class="bi bi-instagram"></i></a>#}
+{#                    <a href=""><i class="bi bi-linkedin"></i></a>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div><!-- End Team Member -->#}
+{##}
+{#          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">#}
+{#            <div class="member">#}
+{#              <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">#}
+{#              <div class="member-info">#}
+{#                <div class="member-info-content">#}
+{#                  <h4>William Anderson</h4>#}
+{#                  <span>CTO</span>#}
+{#                  <div class="social">#}
+{#                    <a href=""><i class="bi bi-twitter-x"></i></a>#}
+{#                    <a href=""><i class="bi bi-facebook"></i></a>#}
+{#                    <a href=""><i class="bi bi-instagram"></i></a>#}
+{#                    <a href=""><i class="bi bi-linkedin"></i></a>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div><!-- End Team Member -->#}
+{##}
+{#          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">#}
+{#            <div class="member">#}
+{#              <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">#}
+{#              <div class="member-info">#}
+{#                <div class="member-info-content">#}
+{#                  <h4>Amanda Jepson</h4>#}
+{#                  <span>Accountant</span>#}
+{#                  <div class="social">#}
+{#                    <a href=""><i class="bi bi-twitter-x"></i></a>#}
+{#                    <a href=""><i class="bi bi-facebook"></i></a>#}
+{#                    <a href=""><i class="bi bi-instagram"></i></a>#}
+{#                    <a href=""><i class="bi bi-linkedin"></i></a>#}
+{#                  </div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+{#          </div><!-- End Team Member -->#}
+{##}
+{#        </div>#}
+{##}
+{#      </div>#}
+{##}
+{#    </section><!-- /Team 2 Section -->#}
 
 
 
@@ -311,7 +340,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>Nairobi, Kenya</p>
+                <p>Kisii, Kenya</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -327,25 +356,32 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@stemiotinnovations.com</p>
+                <p>engineerotienoduor14@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="/clients/" method="post" class="" data-aos="fade-up" data-aos-delay="200">
+                {% csrf_token %}
 {#              <div class="row gy-4">#}
 
                 <div class="col-md-6">
                     <label for="name"><b>Name</b></label>
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="client_name" class="form-control" placeholder="Your Name" required="">
                 </div>
                 <br>
 
                 <label for="email"><b>Email</b></label>
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="client_email" placeholder="Your Email" required="">
+                </div>
+                <br>
+
+                <label for="phone"><b>Phone</b></label>
+                <div class="col-md-6 ">
+                  <input type="number" class="form-control" name="client_phone" placeholder="+254 XXX XXX XXX" required="">
                 </div>
                 <br>
 
@@ -353,13 +389,13 @@
 
                 <div class="col-md-12">
                     <label for="message"><b>Message</b></label>
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="client_message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
                 <br><br>
 
                 <div class="col-md-12 text-center">
 
-                  <button type="submit">Send Message</button>
+                  <button style="color: white; background-color: #EA385AFF; border-radius: 8px; height:25%; border:none;" type="submit">Send Message</button>
                 </div>
 
 
@@ -384,7 +420,9 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Stemiot Innovations</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>We can be reached through our social media handles for even faster operation and incredible services.
+              Your satisfaction is our top priority.</p>
+
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -428,10 +466,10 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Stemiot Innovations</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Stemiot Softwares</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
 
-        Designed by <a href="https://stemiotsoftwares.onrender.com">StemiotInnovations</a>
+        Designed by <a href="https://stemiotsoftwares.onrender.com" style="color: white; font-weight: bold">StemiotSoftwares</a>
       </div>
     </div>
 
@@ -444,6 +482,7 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+
   <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
   <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
   <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>

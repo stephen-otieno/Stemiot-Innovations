@@ -20,9 +20,9 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #060606; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #493c3e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ffffff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #ea385a; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -34,7 +34,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e43c5c; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #ea385a; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -611,7 +611,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: var(--nav-dropdown-hover-color);
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -625,7 +625,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: var(--nav-dropdown-hover-color);
   color: var(--contrast-color);
 }
 
@@ -759,6 +759,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--nav-dropdown-hover-color);
 }
 
 .hero img {
@@ -793,7 +794,7 @@ section,
 .hero p {
   margin: 10px 0 0 0;
   font-size: 24px;
-  color: var(--accent-color);
+  color: var(--default-color);
 }
 
 .hero .btn-get-started {
@@ -812,7 +813,7 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--nav-dropdown-hover-color);
   border-color: var(--accent-color);
 }
 
@@ -858,7 +859,7 @@ section,
 }
 
 .about .content .about-btn:hover {
-  background: var(--accent-color);
+  background: var(--nav-dropdown-hover-color);
   color: var(--contrast-color);
 }
 
@@ -880,10 +881,11 @@ section,
 }
 
 .about .icon-box p {
-  font-size: 15px;
+  font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 0;
 }
+
 
 .about .icon-box:hover h4 a {
   color: var(--accent-color);
@@ -900,6 +902,8 @@ section,
   height: 100%;
   position: relative;
   z-index: 1;
+  border-radius: 20px;
+
 }
 
 .services .service-item:before {
@@ -934,9 +938,10 @@ section,
 
 .services .service-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 0;
   transition: ease-in-out 0.3s;
+
 }
 
 .services .service-item:hover h4 a,
@@ -946,9 +951,10 @@ section,
 }
 
 .services .service-item:hover:before {
-  background: var(--accent-color);
+  background: var(--nav-dropdown-hover-color);
   inset: 0;
-  border-radius: 0px;
+  border-radius: 20px;
+
 }
 
 /*--------------------------------------------------------------

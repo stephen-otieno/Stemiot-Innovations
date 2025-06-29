@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +40,45 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stemiotApp'
 ]
+
+JAZZMIN_SETTINGS = {
+    # "site_logo": "assets/img/logo.png",
+    "login-logo": None,
+    "custom_css": "admin/css/custom_admin.css",  # Load custom styles
+    "site_icon": "static/assets/img/logo1.png",
+    "site_title": "Stemiot Softwares Admin",
+    "site_header": "Stemiot Softwares Management",
+    "site_brand": "StemiotSoftwares",
+    "site_brand_link": "/",  # Clickable Logo to Homepage
+    "welcome_sign": "Welcome to Stemiot Softwares Admin Panel",
+    "copyright": "Stemiot Softwares © 2025",
+
+    "search_model": [ "StemiotApp.Client"],
+
+    # ✅ Adding Home Button in Sidebar
+    "topmenu_links": [
+        {"name": "Home", "url": "/", "icon": "fas fa-home", "show_sidebar": True},
+        {"model": "StemiotApp.Client"},
+    ],
+
+    "usermenu_links": [
+        {"name": "Homepage", "url": "/", "new_window": False},  # Homepage Link in User Menu
+    ],
+
+    "icons": {
+        "FiloArtsPlus.Client": "fas fa-users",
+        "auth.User": "fas fa-user",
+    },
+
+    # ✅ Controlling Sidebar Order
+    "order_with_respect_to": [
+        "Home",
+        # "FiloArtsPlus.Drawing",
+        "FiloArtsPlus.Client",
+        # "FiloArtsPlus.Transaction",
+    ],
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
