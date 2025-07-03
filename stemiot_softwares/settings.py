@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,16 +43,17 @@ INSTALLED_APPS = [
 ]
 
 JAZZMIN_SETTINGS = {
-    # "site_logo": "assets/img/logo.png",
+    # "site_logo": "assets/img/logo1.png",
     "login-logo": None,
-    "custom_css": "admin/css/custom_admin.css",  # Load custom styles
+    # "custom_css": "css/custom_admin.css",
+    # "custom_css": "admin/css/admin_custom.css",
     "site_icon": "static/assets/img/logo1.png",
     "site_title": "Stemiot Softwares Admin",
     "site_header": "Stemiot Softwares Management",
     "site_brand": "StemiotSoftwares",
-    "site_brand_link": "/",  # Clickable Logo to Homepage
+    "site_brand_link": "/",
     "welcome_sign": "Welcome to Stemiot Softwares Admin Panel",
-    "copyright": "Stemiot Softwares © 2025",
+    "copyright": " Stemiot Softwares",
 
     "search_model": [ "StemiotApp.Client"],
 
@@ -157,6 +159,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static/staticfiles")  # Ensure this is a valid path
+
+# Additional static files directories (for development)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

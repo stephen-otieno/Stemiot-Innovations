@@ -24,3 +24,7 @@ def client_details(request):
         )
         client.save()
     return render(request, template_name="index.html")
+
+def clients_table(request):
+    clients = Client.objects.all()
+    return render(request, "clients.html", {'clients': clients})
